@@ -1,0 +1,33 @@
+<!DOCTYPE HTML PUBLIC "-//IETF//DTD HTML//EN">
+<html> <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <style>
+     @import url('https://fonts.googleapis.com/css?family=Libre+Baskerville:400,400i,700|Libre+Franklin:400,700,900');
+    </style>
+    
+    <title>LeAP Lab // {{ .Title }}</title>
+    <link rel="stylesheet" type="text/css" href={{ absURL "css/style.css" }} />
+
+</head>
+
+<body>
+    <div id="page-container" >
+        <div id="title" >
+            <h1><strong>Le</strong>arning<br />
+                <strong>A</strong>daptation &amp;<br />
+                <strong>P</strong>erception<br />
+                Lab
+            </h1>
+        </div>
+        <nav>
+            <ul>
+                {{ $currentPage := . }}
+                {{ range .Site.Menus.main }}
+                <li class="{{ if eq $currentPage.Title .Name }}active{{ end }}"{{ $ }}>
+                    <a href="{{ .URL }}">{{ .Name }}</a>
+                </li>
+                {{ end }}
+            </ul>
+        </nav>
+        <div id="content-container">

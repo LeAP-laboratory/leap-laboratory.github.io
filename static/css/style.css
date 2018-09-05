@@ -1,0 +1,41 @@
+#content-container {
+    width: 80ex;
+    margin: 0 auto;
+}
+
+body {
+    font-family: 'Libre Baskerville', serif;
+}
+
+h1, h2, h3, h4 {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+}
+
+nav {
+    font-family: 'Libre Franklin', sans-serif;
+    font-weight: 700;
+    font-size: 24pt;
+    /* padding: 1em 0; */
+}
+
+#title h1 {
+    font-size: 32pt;
+    font-weight: 400;
+}
+
+#title h1 strong {
+    font-weight: 900;
+}
+
+nav {
+}
+
+nav ul {
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    padding-right: 1em;
+}
