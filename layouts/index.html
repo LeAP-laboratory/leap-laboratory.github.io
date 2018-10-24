@@ -1,5 +1,3 @@
-{{ partial "header.html" . }}
-<div id="content" >
+{{ define "main" }}
     {{ .Content }}
-</div>
-{{ partial "footer.html" . }}
+{{ end }}
