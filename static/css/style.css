@@ -1,10 +1,10 @@
 #page-container {
-    width: 80ex;
+    max-width: 80ex;
     margin: 0 auto;
 }
 
 #content-container {
-    width: 65ex;
+    max-width: 65ex;
 }
 
 body {
