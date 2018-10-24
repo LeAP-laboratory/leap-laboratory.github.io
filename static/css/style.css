@@ -1,10 +1,14 @@
-#content-container {
+#page-container {
     width: 80ex;
     margin: 0 auto;
 }
 
+#content-container {
+    width: 65ex;
+}
+
 body {
-    font-family: 'Libre Baskerville', serif;
+    font-family: 'Libre Franklin', serif;
 }
 
 h1, h2, h3, h4 {
@@ -14,21 +18,32 @@ h1, h2, h3, h4 {
 
 nav {
     font-family: 'Libre Franklin', sans-serif;
-    font-weight: 700;
-    font-size: 24pt;
+    font-weight: normal;
+    font-size: 18pt;
     /* padding: 1em 0; */
 }
 
 #title h1 {
-    font-size: 32pt;
+    font-size: 28pt;
     font-weight: 400;
 }
 
 #title h1 strong {
-    font-weight: 900;
+    font-weight: 700;
 }
 
-nav {
+a {
+    text-decoration: none;
+    color: #888888;
+    font-weight: normal;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+nav li.active a {
+    color: #000000;
 }
 
 nav ul {
@@ -37,5 +52,5 @@ nav ul {
 
 nav ul li {
     display: inline;
-    padding-right: 1em;
+    padding-right: 1ex;
 }

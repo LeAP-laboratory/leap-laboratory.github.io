@@ -14,9 +14,9 @@
 <body>
     <div id="page-container" >
         <div id="title" >
-            <h1><strong>Le</strong>arning<br />
-                <strong>A</strong>daptation &amp;<br />
-                <strong>P</strong>erception<br />
+            <h1><strong>Le</strong>arning
+                <strong>A</strong>daptation &amp;
+                <strong>P</strong>erception
                 Lab
             </h1>
         </div>
@@ -32,6 +32,7 @@
         </nav>
         <div id="content-container">
             {{ block "main" . }}
+            {{ .Content }}
             {{ end }}
         </div> <!-- content container -->
     </div> <!-- page container -->
