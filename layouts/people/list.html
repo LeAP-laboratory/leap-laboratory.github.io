@@ -1,0 +1,11 @@
+{{ define "main" }}
+
+{{ range .Pages }}
+{{ .Title }}
+{{ end }}
+
+{{ range .Pages.GroupBy "Section" }}
+<h3>{{ .Key }}</h3>
+{{ end }}
+
+{{ end }}
