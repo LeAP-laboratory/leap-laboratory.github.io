@@ -1,8 +1,16 @@
 {{ define "main" }}
     {{ range .Sections }}
-        <h2>{{ .Title }}</h2>
+        <h2 class="people">{{ .Title }}</h2>
         {{ range .Pages }}
-            <a href={{ .Permalink }}>{{ .Title }}</a>
+            <div class="person" >
+                <h2 class="name">{{ .Title }}</h2>
+                {{ range .Params.links }}
+                    <a href="{{ .url }}" class="contact">[{{ .name }}]</a> 
+                {{ end }}
+
+                {{ .Content }}
+                <!-- <a href={{ .Permalink }}>{{ .Title }}</a> -->
+            </div>
         {{ end }}
     {{ end }}
 {{ end }}

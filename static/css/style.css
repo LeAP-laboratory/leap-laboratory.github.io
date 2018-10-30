@@ -16,6 +16,20 @@ h1, h2, h3, h4 {
     font-weight: 700;
 }
 
+div.person {
+
+}
+
+.person * {
+    margin-top: 0.5ex;
+    margin-bottom: 0.5ex;
+}
+
+h2.name {
+    display: inline-block;
+    /* margin: 10px 0px; */
+}
+
 nav {
     font-family: 'Libre Franklin', sans-serif;
     font-weight: normal;
