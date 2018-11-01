@@ -35,6 +35,7 @@ nav {
     font-weight: normal;
     font-size: 18pt;
     /* padding: 1em 0; */
+    padding-bottom: 1em;
 }
 
 #title h1 {
