@@ -3,10 +3,10 @@ title: "Sten Knutsen"
 links:
   - name: website
     url: http://stengarden.net/
-  - name: github
-    url: https://github.com/stenknutsen
   - name: twitter
     url: https://twitter.com/stenknutsen
+  - name: github
+    url: https://github.com/stenknutsen
 ---
 
 Sten is a 2nd year student in the Cognitive Psychology PhD program at Rutgers
