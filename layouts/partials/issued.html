@@ -1,0 +1,5 @@
+{{ if .year }}
+({{- .year -}})
+{{ else if .literal }}
+(<em>{{- .literal -}}</em>)
+{{ end }}

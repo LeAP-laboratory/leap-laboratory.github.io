@@ -1,0 +1,21 @@
+<h2>Papers</h2>
+
+<ul>
+    {{ range sort (where .Site.Data.papers.references "type" "article-journal") "issued" }}
+    <li>{{ partial "paper.html" . }}</li>
+    {{ end }}
+</ul>
+
+<h2>Submitted and in prep</h2>
+<ul>
+    {{ range sort (where .Site.Data.papers.references "status" "in" (slice "in preparation" "submitted")) "status" "desc" }}
+    <li>{{ partial "paper.html" . }}</li>
+    {{ end }}
+</ul>
+
+<h2>Conference proceedings</h2>
+<ul>
+    {{ range where .Site.Data.papers.references "type" "paper-conference" }}
+    <li>{{ partial "paper.html" . }}</li>
+    {{ end }}
+</ul>
